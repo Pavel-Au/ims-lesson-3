@@ -1,4 +1,4 @@
-import "./ActionButton.css";
+import "./ActionButton.sass";
 
 export const ActionButton = ({ children, actionHandler }) => {
   return (
