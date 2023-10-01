@@ -6,8 +6,10 @@ export const ActionButton = ({ children, actionHandler }) => {
       {actionHandler ? (
         <button onClick={actionHandler} className="action-button">
           {children}
-        </button>
-      ) : null}
+           </button>
+
+
+      ) : null}  
     </>
   );
 };

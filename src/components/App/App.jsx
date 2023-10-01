@@ -11,7 +11,7 @@ export const App = () => {
   useEffect(() => {
     (async () => {
       setList(
-        (await tasksService.get().catch(alert))
+        (await tasksService.get().catch(() => []))
           .slice(0, 15)
           .map((item, i) => ({ ...item, title: "Task " + ++i }))
       );
